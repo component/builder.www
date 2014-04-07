@@ -3,12 +3,6 @@
 
 Koa middleware for making a build server.
 
-Notes:
-
-- Should probably handle concurrent installs/resolves better.
-- Need to implement optional minification.
-- Standalone build of single file without the `require()` implementation.
-
 ## License
 
 (The MIT License)
