@@ -1,0 +1,41 @@
+{
+  "name": "component-builder-www",
+  "description": "Component building middleware",
+  "version": "1.0.0",
+  "author": {
+    "name": "Jonathan Ong",
+    "email": "me@jongleberry.com",
+    "url": "http://jongleberry.com",
+    "twitter": "https://twitter.com/jongleberry"
+  },
+  "license": "MIT",
+  "repository": "component/builder.www",
+  "dependencies": {
+    "debug": "*",
+    "component-build": "^1.0.3",
+    "component-flatten": "^1.0.0",
+    "component-resolver": "^1.1.1",
+    "koa": "~0.5.1",
+    "koa-cdn": "^1.0.0",
+    "koa-path": "^1.0.0",
+    "koa-logger": "^1.2.0",
+    "koa-favicon": "^1.0.1",
+    "koa-compress": "^1.0.4",
+    "is-umd": "^1.0.0"
+  },
+  "devDependencies": {
+    "co": "^3.0.5",
+    "should": "^3.0",
+    "mocha": "^1.13",
+    "supertest": "~0.10.0",
+    "rimraf": "2"
+  },
+  "main": "lib",
+  "scripts": {
+    "start": "node --harmony-generators lib/app",
+    "test": "NODE_ENV=test mocha --harmony-generators --require should --reporter spec --bail --timeout 10s"
+  },
+  "engines": {
+    "node": ">= 0.11.12"
+  }
+}
